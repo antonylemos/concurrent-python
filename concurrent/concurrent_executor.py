@@ -8,6 +8,7 @@ def runSceneries(scenerie, amountOfExecutions):
   for currentExecution in range(amountOfExecutions):
     functionTime = getResponseTimeInMillis(getCoffeeImageUrl, scenerie)
     f.write("%d\n"%(functionTime))
+    print('Current execution: %d'%(currentExecution))
 
   f.close()
   print("File '%s' genereted with sucess." %(file_name))
